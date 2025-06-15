@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Home Automation</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Smart Home Automation</h1>
+    <div class="device" id="light">
+      <h3>Light</h3>
+      <button onclick="toggleDevice('light')">Toggle</button>
+      <p>Status: <span id="light-status">OFF</span></p>
+    </div>
+    <div class="device" id="fan">
+      <h3>Fan</h3>
+      <button onclick="toggleDevice('fan')">Toggle</button>
+      <p>Status: <span id="fan-status">OFF</span></p>
+    </div>
+    <div class="device" id="ac">
+      <h3>AC</h3>
+      <button onclick="toggleDevice('ac')">Toggle</button>
+      <p>Status: <span id="ac-status">OFF</span></p>
+    </div>
+    <div class="ai-suggestion">
+      <h3>AI Suggestion:</h3>
+      <p id="ai-output">Press any toggle to simulate AI suggestion.</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
